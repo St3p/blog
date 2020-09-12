@@ -68,5 +68,5 @@ paginate = 5
         url = "/about me"
       [[languages.en.menu.main]]
         identifier = "Proyects"
-        name = "Proyects"
-        url = "/Proyects"
+        name = "proyects"
+        url = "/proyects"
