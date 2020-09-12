@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-theme = "terminal"
+theme = "My Blog"
 paginate = 5
 
 [params]
@@ -63,10 +63,10 @@ paginate = 5
 
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "hey"
-        name = "hey"
-        url = "/hey"
+        identifier = "About me"
+        name = "About me"
+        url = "/about me"
       [[languages.en.menu.main]]
-        identifier = "proyects"
-        name = "proyects"
-        url = "/proyects"
+        identifier = "Proyects"
+        name = "Proyects"
+        url = "/Proyects"
