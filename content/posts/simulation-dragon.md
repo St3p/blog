@@ -1,13 +1,12 @@
+---
+title: "Simulation of the movement of a creature"
+date: "2018-07-18"
+author: "Stephanie Zepeda"
+cover: "img/drogon.png"
+description: "simulation of the movement of a dragon at the time it is flying."
+---
 
-
-+++
-title = "Dragon Movement Proyect"
-date = "2020"
-author = "Stephanie Zepeda"
-cover = "img/drogon.png"
-description = "simulation of the movement of a dragon at the time it is flying."
-+++
-
+## simulation of mecanismis using Solidworks.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. **Donec quis dolor nec nunc mollis interdum vel in purus**. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
 
