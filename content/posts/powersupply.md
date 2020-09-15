@@ -8,6 +8,11 @@ description: "Construction of a power supply with 5v, 12v and -12v output. Using
 
 ## material
 
+|  #Material    |   #cuantity   |
+| Transformator |      1        |
+| cable         |      1        |
+| protoboard    |      1        |
+
 
 At first, the circuit was generated in the Livewire simulator to check that it worked properly, as shown in the following image:
 
