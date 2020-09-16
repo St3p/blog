@@ -46,9 +46,9 @@ theme = ["hugo-video", "terminal"]
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Terminal"
-    subtitle = "A simple, retro theme for Hugo"
-    owner = ""
+    title = "Stephanie Z"
+    subtitle = "Robotics Entusiast"
+    owner = "Stephanie L. Zepeda Sanchez"
     keywords = ""
     copyright = ""
     menuMore = "Show more"
