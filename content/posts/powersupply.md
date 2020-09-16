@@ -8,15 +8,16 @@ description: "Construction of a power supply with 5v, 12v and -12v output. Using
 
 ## material
 
-{{< table >}}
-| Disk 0 | Disk 1 | Disk 2 | Disk 3 |
-|:------:|:------:|:------:|:-------:|
-|   A1   |   A2   |   A3   | Ap(1-3) |
-|   A4   |   A5   |   A6   | Ap(4-6) |
-|   B1   |   B2   |   B3   | Bp(1-3) |
-|   B4   |   B5   |   B6   | Bp(4-6) |
-{{< table />}}
-
+{.table .table-striped}
+|            PATREON PLEDGE            | 1€   | 5€   | 7€   |
+|:------------------------------------ |:----:|:----:|:----:|
+| Early Access to Articles             | ✓    | ✓    | ✓    |
+| Hints for CryptoNovel Puzzles        | ✓    | ✓    | ✓    |
+| Access to Patreon Feed               | ✓    | ✓    | ✓    |
+| Small Listing On The Site As A Patron|      | ✓    | ✓    |
+| Suggestions of New Content           |      | ✓    | ✓    |
+| Request of a Research Article        |      |      | ✓    |
+| Listed As A Full Sponsor             |      |      | ✓    |
 At first, the circuit was generated in the Livewire simulator to check that it worked properly, as shown in the following image:
 
 {{< image src="/img/livewirecircuit.png" alt="Circuit" position="center" style="border-radius: 8px;" >}}
