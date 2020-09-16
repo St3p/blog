@@ -60,13 +60,13 @@ The operation of this mecanism is simple it consist on a motor in the center of 
    }
 ```
 
-{{< video src="/video/r2.mp4" >}}
+{{< video src="/video/r2" >}}
 
 #  Center leg
 
 Simple scissor mechanisim for the center leg to come up or down.
 
-{{< image src="/img/centerfeet.png" alt="Circuit" position="center" style="border-radius: 8px;" >}}
+{{< image src="/img/centerfeet.png" >}}
 
 # Results
 
