@@ -1,6 +1,6 @@
 ---
 title: "Simulation of the movement of a creature"
-date: "2018-07-18"
+date: "2019-09-29"
 author: "Stephanie Zepeda"
 cover: "img/drogon.png"
 description: "simulation of the movement of a dragon at the time it is flying."

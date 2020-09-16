@@ -1,20 +1,72 @@
 ---
 title: "Mini R2-D2"
-date: "2018-07-18"
+date: "2020-06-02"
 author: "Stephanie Zepeda"
 cover: "img/MiniR2D2.png"
 description: "Construction of a R2-D2 at a scale of 45%, using Solidworks, Arduino and a 3D Printer."
 ---
 
-## simulation of mecanismis using Solidworks.
+# Frame Design
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. **Donec quis dolor nec nunc mollis interdum vel in purus**. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
+The design was made taking into account the multiple vents and panels of the robot seen on the films, so in a future it could have space to accomodate little sistems for their movemnt. The measurements took into account to make the frame where taken from the website wwww.astromech.com
 
-> Fusce pharetra suscipit orci nec tempor. Quisque vitae sem sit amet sem mollis consequat. Sed at imperdiet lorem. Vestibulum pharetra faucibus odio, ac feugiat tellus sollicitudin at. Pellentesque varius tristique mi imperdiet dapibus. Duis orci odio, sodales lacinia venenatis sit amet, feugiat et diam.
+{{< image src="/img/frame.png" alt="Circuit" position="center" style="border-radius: 8px;" >}}
 
-Sed a leo id risus venenatis vulputate non quis nulla. Aenean nisl quam, lacinia pulvinar orci sit amet, eleifend eleifend dui. Nulla tempor ligula leo, eu vehicula quam condimentum a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla gravida tristique nunc sed semper. Morbi nec felis odio.
+# Head mechanisim
 
-- Sed efficitur, lacus ac scelerisque pellentesque, lectus risus dignissim nisl, fermentum semper lectus diam eget lacus.
-- Nunc ornare purus enim, id eleifend mauris vestibulum volutpat.
-- Aenean facilisis ut ipsum condimentum ultrices.
-- Fusce sed metus vulputate, lobortis purus et, finibus purus. Suspendisse quis posuere lorem. Vivamus vulputate nec risus in pulvinar.
+- Solidworks design
+
+The operation of this mecanism is simple it consist on a motor in the center of the head which gives action to a axial gear that moves smothly thanks to the help of a lazy sussan that is attached to the fram and the base of the head.
+
+{{< image src="/img/head.png" alt="Circuit" position="center" style="border-radius: 8px;" >}}
+
+
+
+ - Arduino program
+
+ ```
+  else if (letter == 'E')
+  {
+    digitalWrite(LedR, LOW);
+     randNumber = random(1, 16);
+     digitalWrite(CABD, LOW);
+     digitalWrite(CABA, HIGH);
+     myDFPlayer.play(randNumber);
+     Serial.println(randNumber);
+
+     Serial.println(F("Cab Izq"));
+     digitalWrite(LedA, HIGH);
+     delay(10000);
+     digitalWrite(LedA, LOW);
+     digitalWrite(LedR, HIGH);
+     digitalWrite(CABD, LOW);
+     digitalWrite(CABA, LOW);
+   }
+   else if (letter == 'F')
+   {
+     digitalWrite(LedR, LOW);
+     randNumber = random(1, 16);
+     digitalWrite(CABD, HIGH);
+     digitalWrite(CABA, LOW);
+     myDFPlayer.play(randNumber);
+     Serial.println(randNumber);
+     Serial.println(F(" Cab Der"));
+     digitalWrite(LedA, HIGH);
+     delay(10000);
+     digitalWrite(LedA, LOW);
+     digitalWrite(LedR, HIGH);
+     digitalWrite(CABD, LOW);
+     digitalWrite(CABA, LOW);
+   }
+```
+{{< video src="headmovement.mp4" >}}
+
+#  Center leg
+
+Simple scissor mechanisim for the center leg to come up or down.
+
+{{< image src="/img/centerfeet.png" alt="Circuit" position="center" style="border-radius: 8px;" >}}
+
+# Results
+
+{{< image src="/img/r2d2100.png" alt="Circuit" position="center" style="border-radius: 8px;" >}}
