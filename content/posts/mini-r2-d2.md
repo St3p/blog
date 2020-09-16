@@ -59,7 +59,7 @@ The operation of this mecanism is simple it consist on a motor in the center of 
      digitalWrite(CABA, LOW);
    }
 ```
-{{< video src="headmovement.mp4" >}}
+{{< video src="Headmovement" width="600px" >}}
 
 #  Center leg
 
