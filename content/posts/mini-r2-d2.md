@@ -8,7 +8,7 @@ description: "Construction of a R2-D2 at a scale of 45%, using Solidworks, Ardui
 
 # Frame Design
 
-The design was made taking into account the multiple vents and panels of the robot seen on the films, so in a future it could have space to accomodate little sistems for their movemnt. The measurements took into account to make the frame where taken from the website wwww.astromech.com
+The design was made taking into account the multiple vents and panels of the robot seen on the films, so in a future it could have space to accommodate little systems for their movement. The measurements took into account to make the frame where taken from the website wwww.astromech.com
 
 {{< image src="/img/frame.png" alt="Circuit" position="center" style="border-radius: 8px;" >}}
 
@@ -16,7 +16,7 @@ The design was made taking into account the multiple vents and panels of the rob
 
 - Solidworks design
 
-The operation of this mecanism is simple it consist on a motor in the center of the head which gives action to a axial gear that moves smothly thanks to the help of a lazy sussan that is attached to the fram and the base of the head.
+The operation of this mechanism is simple it consist on a motor in the center of the head which gives action to a axial gear that moves smoothly thanks to the help of a lazy Susan that is attached to the from and the base of the head.
 
 {{< image src="/img/head.png" alt="Circuit" position="center" style="border-radius: 8px;" >}}
 
@@ -66,7 +66,7 @@ The operation of this mecanism is simple it consist on a motor in the center of 
 
 - Solidworks Design
 
-Simple scissor mechanisim for the center leg to come up or down.
+Simple scissor mechanism for the center leg to come up or down.
 
 {{< image src="/img/centerfeet.png" >}}
 
@@ -121,7 +121,7 @@ if (letter == 'G')
 
 - Solidworks Design
 
-System of gears to give the systm more torque and pull force.
+System of gears to give the system more torque and pull force.
 
 {{< image src="/img/foot.png" >}}
 

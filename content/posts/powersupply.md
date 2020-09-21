@@ -31,7 +31,7 @@ description: "Construction of a power supply with 5v, 12v and -12v output. Using
     potentiometer        1              5k ohms
     photographic paper   2 sheets         
     phenolic plate       1                                            10 x 10 cm
-    ferrric chloride     1 bottle       MC100                         900 mL
+    ferric chloride     1 bottle       MC100                         900 mL
     plastic tray         1                                            20 X 15 cm
     griddle              1
     drill bits           2             Her200 and Her201              

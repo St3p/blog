@@ -1,0 +1,2 @@
+  contentTypeName = "posts"
+  

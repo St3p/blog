@@ -69,4 +69,4 @@ theme = ["hugo-video", "terminal"]
       [[languages.en.menu.main]]
         identifier = "Proyects"
         name = "proyects"
-        url = "/proyects"
+        url = "projects/proyects"

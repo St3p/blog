@@ -3,7 +3,7 @@ title: "Shift Registrers"
 date: "2019-03-10"
 author: "Stephanie Zepeda"
 cover: "img/Shift-Registers.png"
-description: "Four uses of shift registrers. The first part consisted of simulating a mouse moving, that is, turning on a segment of the display at the same time with a given sequence; the second part, simulated a mouse growing until it became a worm, therefore, the display had to be turned on segment by segment according to the sequence given; for the third part, we had to simulate a viper in motion with two displays, turning on three segments per movement; finally, in the fourth part, a ball was simulated that bounced and traveled through nine displays, lighting four segments at the same time with a certain sequence."
+description: "Four uses of shift registers. The first part consisted of simulating a mouse moving, that is, turning on a segment of the display at the same time with a given sequence; the second part, simulated a mouse growing until it became a worm, therefore, the display had to be turned on segment by segment according to the sequence given; for the third part, we had to simulate a viper in motion with two displays, turning on three segments per movement; finally, in the fourth part, a ball was simulated that bounced and traveled through nine displays, lighting four segments at the same time with a certain sequence."
 ---
 
 ## Screen Saver: Basic Scroll: The Mouse
