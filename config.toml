@@ -6,7 +6,7 @@ theme = ["hugo-video", "terminal"]
 [params]
   # dir name of your main content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+  contentTypeName = "post"
 
   # ["orange", "blue", "red", "green", "pink"]
   themeColor = "green"
@@ -67,6 +67,6 @@ theme = ["hugo-video", "terminal"]
         name = "About me"
         url = "about/about"
       [[languages.en.menu.main]]
-        identifier = "Proyects"
+        identifier = "Project"
         name = "proyects"
-        url = "projects/proyects"
+        url = "project/project"
