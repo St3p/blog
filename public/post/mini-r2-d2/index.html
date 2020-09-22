@@ -1,0 +1,446 @@
+<!doctype html><html lang=en><head><title>Mini R2-D2 :: Stephanie Z</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Frame Design The design was made taking into account the multiple vents and panels of the robot seen on the films, so in a future it could have space to accommodate little systems for their movement. The measurements took into account to make the frame where taken from the website wwww.astromech.com
+Head mechanisim  Solidworks design  The operation of this mechanism is simple it consist on a motor in the center of the head which gives action to a axial gear that moves smoothly thanks to the help of a lazy Susan that is attached to the from and the base of the head."><meta name=keywords content><meta name=robots content="noodp"><link rel=canonical href=https://st3p.github.io/post/mini-r2-d2/><link rel=stylesheet href=https://st3p.github.io/assets/style.css><link rel=stylesheet href=https://st3p.github.io/assets/green.css><link rel=apple-touch-icon-precomposed sizes=144x144 href=https://st3p.github.io/img/apple-touch-icon-144-precomposed.png><link rel="shortcut icon" href=https://st3p.github.io/img/favicon/green.png><meta name=twitter:card content="summary"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="og:title" content="Mini R2-D2 :: Stephanie Z"><meta property="og:description" content="Construction of a R2-D2 at a scale of 45%, using Solidworks, Arduino and a 3D Printer."><meta property="og:url" content="https://st3p.github.io/post/mini-r2-d2/"><meta property="og:site_name" content="Mini R2-D2"><meta property="og:image" content="https://st3p.github.io/img/MiniR2D2.png"><meta property="og:image:width" content="2048"><meta property="og:image:height" content="1024"><meta property="article:published_time" content="2020-06-02 00:00:00 +0000 UTC"></head><body class=green><div class="container center headings--one-size"><header class=header><div class=header__inner><div class=header__logo><a href=/><div class=logo>My Blog</div></a></div><div class=menu-trigger>menu</div></div><nav class=menu><ul class="menu__inner menu__inner--desktop"><li><a href=about/about>About me</a></li><li><a href=project/project>proyects</a></li></ul><ul class="menu__inner menu__inner--mobile"><li><a href=about/about>About me</a></li><li><a href=project/project>proyects</a></li></ul></nav></header><div class=content><div class=post><h1 class=post-title><a href=https://st3p.github.io/post/mini-r2-d2/>Mini R2-D2</a></h1><div class=post-meta><span class=post-date>2020-06-02</span>
+<span class=post-author>:: Stephanie Zepeda</span></div><img src=https://st3p.github.io/img/MiniR2D2.png class=post-cover alt="Mini R2-D2"><div class=post-content><div><h1 id=frame-design>Frame Design<a href=#frame-design class=hanchor arialabel=Anchor>&#8983;</a></h1><p>The design was made taking into account the multiple vents and panels of the robot seen on the films, so in a future it could have space to accommodate little systems for their movement. The measurements took into account to make the frame where taken from the website wwww.astromech.com</p><img src=/img/frame.png alt=Circuit class=center style=border-radius:8px><h1 id=head-mechanisim>Head mechanisim<a href=#head-mechanisim class=hanchor arialabel=Anchor>&#8983;</a></h1><ul><li>Solidworks design</li></ul><p>The operation of this mechanism is simple it consist on a motor in the center of the head which gives action to a axial gear that moves smoothly thanks to the help of a lazy Susan that is attached to the from and the base of the head.</p><img src=/img/head.png alt=Circuit class=center style=border-radius:8px><ul><li>Arduino program</li></ul><pre><code> else if (letter == 'E')
+ {
+   digitalWrite(LedR, LOW);
+    randNumber = random(1, 16);
+    digitalWrite(CABD, LOW);
+    digitalWrite(CABA, HIGH);
+    myDFPlayer.play(randNumber);
+    Serial.println(randNumber);
+
+    Serial.println(F(&quot;Cab Izq&quot;));
+    digitalWrite(LedA, HIGH);
+    delay(10000);
+    digitalWrite(LedA, LOW);
+    digitalWrite(LedR, HIGH);
+    digitalWrite(CABD, LOW);
+    digitalWrite(CABA, LOW);
+  }
+  else if (letter == 'F')
+  {
+    digitalWrite(LedR, LOW);
+    randNumber = random(1, 16);
+    digitalWrite(CABD, HIGH);
+    digitalWrite(CABA, LOW);
+    myDFPlayer.play(randNumber);
+    Serial.println(randNumber);
+    Serial.println(F(&quot; Cab Der&quot;));
+    digitalWrite(LedA, HIGH);
+    delay(10000);
+    digitalWrite(LedA, LOW);
+    digitalWrite(LedR, HIGH);
+    digitalWrite(CABD, LOW);
+    digitalWrite(CABA, LOW);
+  }
+</code></pre><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src="https://www.youtube.com/embed/vOZ99ObCF2w?autoplay=1" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><h1 id=center-leg>Center leg<a href=#center-leg class=hanchor arialabel=Anchor>&#8983;</a></h1><ul><li>Solidworks Design</li></ul><p>Simple scissor mechanism for the center leg to come up or down.</p><img src=/img/centerfeet.png class=left><ul><li>Arduino Code</li></ul><pre><code>if (letter == 'G')
+    {
+      randNumber = random(1, 16);
+      digitalWrite(LedA, LOW);
+      digitalWrite(APieCD, HIGH);
+      digitalWrite(APieCA, LOW);
+      digitalWrite(BPieCD, HIGH);
+      digitalWrite(BPieCA, LOW);
+      myDFPlayer.play(randNumber);
+      Serial.println(randNumber);
+      Serial.println(F(&quot;Pie Central Arriba&quot;));
+      digitalWrite(LedA, HIGH);
+      delay(1500);
+      digitalWrite(LedA, LOW);
+      digitalWrite(LedR, HIGH);
+      digitalWrite(APieCD, LOW);
+      digitalWrite(APieCA, LOW);
+      digitalWrite(BPieCD, LOW);
+      digitalWrite(BPieCA, LOW);
+
+    }
+    else if (letter == 'H')
+    {
+      digitalWrite(LedR, LOW);
+      randNumber = random(1, 16);
+      digitalWrite(APieCD, LOW);
+      digitalWrite(APieCA, HIGH);
+      digitalWrite(BPieCD, LOW);
+      digitalWrite(BPieCA, HIGH);
+      myDFPlayer.play(randNumber);
+      Serial.println(randNumber);
+      Serial.println(F(&quot;Pie Central Abajo&quot;));
+      digitalWrite(LedA, HIGH);
+      delay(300);
+      digitalWrite(LedA, LOW);
+      digitalWrite(LedR, HIGH);
+      digitalWrite(APieCD, LOW);
+      digitalWrite(APieCA, LOW);
+      digitalWrite(BPieCD, LOW);
+      digitalWrite(BPieCA, LOW);
+    }
+</code></pre><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src="https://www.youtube.com/embed/o6a2He_KXXc?autoplay=1" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><h1 id=foot>Foot<a href=#foot class=hanchor arialabel=Anchor>&#8983;</a></h1><ul><li>Solidworks Design</li></ul><p>System of gears to give the system more torque and pull force.</p><img src=/img/foot.png class=left><ul><li>Arduino Code</li></ul><pre><code>if (letter == 'C')
+   {
+     randNumber = random(1, 16);
+     digitalWrite(LedA, LOW);
+     digitalWrite(IZQD, LOW);
+     digitalWrite(BIZQD, LOW);
+     digitalWrite(IZQA, LOW);
+     digitalWrite(BIZQA, LOW);
+     digitalWrite(DERD, HIGH);
+     digitalWrite(BDERD, HIGH);
+     digitalWrite(DERA, LOW);
+     digitalWrite(BDERA, LOW);
+     myDFPlayer.play(randNumber);
+     Serial.println(randNumber);
+     Serial.println(F(&quot;Derecha&quot;));
+     digitalWrite(LedA, HIGH);
+     delay(2500);
+     digitalWrite(LedA, LOW);
+     digitalWrite(LedR, HIGH);
+   }
+   else if (letter == 'D')
+   {
+     digitalWrite(LedR, LOW);
+     randNumber = random(1, 16);
+     digitalWrite(IZQD, LOW);
+     digitalWrite(IZQA, HIGH);
+     digitalWrite(DERD, LOW);
+     digitalWrite(DERA, LOW);
+     digitalWrite(BIZQD, LOW);
+     digitalWrite(BIZQA, HIGH);
+     digitalWrite(BDERD, LOW);
+     digitalWrite(BDERA, LOW);
+     myDFPlayer.play(randNumber);
+     Serial.println(randNumber);
+     Serial.println(F(&quot;Izquierda&quot;));
+     delay (2500);
+           digitalWrite(LedA, LOW);
+     digitalWrite(LedR, HIGH);
+
+   }
+else if (letter == 'A')
+   {
+     digitalWrite(LedR, LOW);
+     randNumber = random(1, 16);
+     digitalWrite(IZQD, HIGH);
+     digitalWrite(IZQA, LOW);
+     digitalWrite(DERD, LOW);
+     digitalWrite(DERA, HIGH);
+     digitalWrite(BIZQD, HIGH);
+     digitalWrite(BIZQA, LOW);
+     digitalWrite(BDERD, LOW);
+     digitalWrite(BDERA, HIGH);
+     myDFPlayer.play(randNumber);
+     Serial.println(randNumber);
+     Serial.println(F(&quot;Adelante&quot;));
+     digitalWrite(LedA, HIGH);
+     delay(1000);
+     digitalWrite(LedA, LOW);
+     digitalWrite(LedR, HIGH);
+
+   }
+
+    else if (letter == 'B')
+   {
+     digitalWrite(LedR, LOW);
+     randNumber = random(1, 16);
+     digitalWrite(IZQD, LOW);
+     digitalWrite(IZQA, HIGH);
+     digitalWrite(DERD, HIGH);
+     digitalWrite(DERA, LOW);
+     digitalWrite(BIZQD, LOW);
+     digitalWrite(BIZQA, HIGH);
+     digitalWrite(BDERD, HIGH);
+     digitalWrite(BDERA, LOW);
+     myDFPlayer.play(randNumber);
+     Serial.println(randNumber);
+     Serial.println(F(&quot;Atras&quot;));
+     digitalWrite(LedA, HIGH);
+     delay(1000);
+     digitalWrite(LedA, LOW);
+     digitalWrite(LedR, HIGH);
+
+   }
+</code></pre><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src="https://www.youtube.com/embed/5Z0LixiRYLY?autoplay=1" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><h1 id=results>Results<a href=#results class=hanchor arialabel=Anchor>&#8983;</a></h1><img src=/img/r2d2100.png alt=Circuit class=center style=border-radius:8px><ul><li>Arduino Code Complete</li></ul><pre><code>#include &quot;Arduino.h&quot;
+#include &quot;SoftwareSerial.h&quot;
+#include &quot;DFRobotDFPlayerMini.h&quot;
+SoftwareSerial mySoftwareSerial(10, 11); // RX, TX
+DFRobotDFPlayerMini myDFPlayer;
+void printDetail(uint8_t type, int value);
+
+int IZQD = 2;
+int IZQA = 3;
+int BIZQD = A1;
+int BIZQA = A0;
+int DERD = 6;
+int DERA = 7;
+int BDERD = 12;
+int BDERA = 13;
+int CABD = 5;
+int CABA = 4;
+int LedR = 8;
+int LedA = 9;
+int APieCD = A3;
+int APieCA = A2;
+int BPieCD = A4;
+int BPieCA = A5;
+
+long randNumber;
+
+void setup() {
+
+  pinMode(LedR, OUTPUT);
+  pinMode(LedA, OUTPUT);
+  pinMode(IZQD, OUTPUT);
+  pinMode(IZQA, OUTPUT);
+  pinMode(DERD, OUTPUT);
+  pinMode(DERA, OUTPUT);
+  pinMode(BIZQD, OUTPUT);
+  pinMode(BIZQA, OUTPUT);
+  pinMode(BDERD, OUTPUT);
+  pinMode(BDERA, OUTPUT);
+  pinMode(CABD, OUTPUT);
+  pinMode(CABA, OUTPUT);
+  pinMode(APieCD, OUTPUT);
+  pinMode(APieCA, OUTPUT);
+  pinMode(BPieCD, OUTPUT);
+  pinMode(BPieCA, OUTPUT);
+  mySoftwareSerial.begin(9600);
+  Serial.begin(115200);
+
+  randomSeed(analogRead(0));
+
+
+  Serial.println();
+  Serial.println(F(&quot;DFRobot DFPlayer Mini Demo&quot;));
+  Serial.println(F(&quot;Initializing DFPlayer ... (May take 3~5 seconds)&quot;));
+  Serial.println();
+  Serial.println(F(&quot;==================================================================================================================================&quot;));
+  Serial.println(F(&quot; [A] Adelante&quot;));
+  Serial.println(F(&quot; [B] Atras&quot;));
+  Serial.println(F(&quot; [C] Derecha&quot;));
+  Serial.println(F(&quot; [D] Izquierda&quot;));
+  Serial.println(F(&quot; [E] Cabeza Izq&quot;));
+  Serial.println(F(&quot; [F] Cabeza Der&quot;));
+  Serial.println(F(&quot; [G] Pie central Arriba&quot;));
+  Serial.println(F(&quot; [H] Pie Central Abajo&quot;));
+  Serial.println(F(&quot; [I] Stop&quot;));
+  Serial.println();
+  Serial.println(F(&quot;=================================================================================================================================&quot;));
+
+  if (!myDFPlayer.begin(mySoftwareSerial)) {
+    Serial.println(F(&quot;Unable to begin:&quot;));
+    Serial.println(F(&quot;1.Please recheck the connection!&quot;));
+    Serial.println(F(&quot;2.Please insert the SD card!&quot;));
+    while (true) {
+      delay(0);
+    }
+  }
+  Serial.println(F(&quot;DFPlayer Mini online.&quot;));
+
+  myDFPlayer.volume(10);  //Set volume value. From 0 to 30
+}
+
+void loop() {
+  digitalWrite(LedR, HIGH);
+  if (Serial.available() &gt; 0)
+  {
+      digitalWrite(IZQD, LOW);
+      digitalWrite(IZQA, LOW);
+      digitalWrite(DERD, LOW);
+      digitalWrite(DERA, LOW);
+      digitalWrite(BIZQD, LOW);
+      digitalWrite(BIZQA, LOW);
+      digitalWrite(BDERD, LOW);
+      digitalWrite(BDERA, LOW);
+      digitalWrite(CABD, LOW);
+      digitalWrite(CABA, LOW);
+      digitalWrite(APieCD, LOW);
+      digitalWrite(APieCA, LOW);
+      digitalWrite(BPieCD, LOW);
+      digitalWrite(BPieCA, LOW);      
+
+
+    char letter = Serial.read();
+
+    if (letter == 'C')
+    {
+      randNumber = random(1, 16);
+      digitalWrite(LedA, LOW);
+      digitalWrite(IZQD, LOW);
+      digitalWrite(BIZQD, LOW);
+      digitalWrite(IZQA, LOW);
+      digitalWrite(BIZQA, LOW);
+      digitalWrite(DERD, HIGH);
+      digitalWrite(BDERD, HIGH);
+      digitalWrite(DERA, LOW);
+      digitalWrite(BDERA, LOW);
+      myDFPlayer.play(randNumber);
+      Serial.println(randNumber);
+      Serial.println(F(&quot;Derecha&quot;));
+      digitalWrite(LedA, HIGH);
+      delay(2500);
+      digitalWrite(LedA, LOW);
+      digitalWrite(LedR, HIGH);
+    }
+    else if (letter == 'D')
+    {
+      digitalWrite(LedR, LOW);
+      randNumber = random(1, 16);
+      digitalWrite(IZQD, LOW);
+      digitalWrite(IZQA, HIGH);
+      digitalWrite(DERD, LOW);
+      digitalWrite(DERA, LOW);
+      digitalWrite(BIZQD, LOW);
+      digitalWrite(BIZQA, HIGH);
+      digitalWrite(BDERD, LOW);
+      digitalWrite(BDERA, LOW);
+      myDFPlayer.play(randNumber);
+      Serial.println(randNumber);
+      Serial.println(F(&quot;Izquierda&quot;));
+      delay (2500);
+            digitalWrite(LedA, LOW);
+      digitalWrite(LedR, HIGH);
+
+    }
+ else if (letter == 'A')
+    {
+      digitalWrite(LedR, LOW);
+      randNumber = random(1, 16);
+      digitalWrite(IZQD, HIGH);
+      digitalWrite(IZQA, LOW);
+      digitalWrite(DERD, LOW);
+      digitalWrite(DERA, HIGH);
+      digitalWrite(BIZQD, HIGH);
+      digitalWrite(BIZQA, LOW);
+      digitalWrite(BDERD, LOW);
+      digitalWrite(BDERA, HIGH);
+      myDFPlayer.play(randNumber);
+      Serial.println(randNumber);
+      Serial.println(F(&quot;Adelante&quot;));
+      digitalWrite(LedA, HIGH);
+      delay(1000);
+      digitalWrite(LedA, LOW);
+      digitalWrite(LedR, HIGH);
+
+    }
+
+     else if (letter == 'B')
+    {
+      digitalWrite(LedR, LOW);
+      randNumber = random(1, 16);
+      digitalWrite(IZQD, LOW);
+      digitalWrite(IZQA, HIGH);
+      digitalWrite(DERD, HIGH);
+      digitalWrite(DERA, LOW);
+      digitalWrite(BIZQD, LOW);
+      digitalWrite(BIZQA, HIGH);
+      digitalWrite(BDERD, HIGH);
+      digitalWrite(BDERA, LOW);
+      myDFPlayer.play(randNumber);
+      Serial.println(randNumber);
+      Serial.println(F(&quot;Atras&quot;));
+      digitalWrite(LedA, HIGH);
+      delay(1000);
+      digitalWrite(LedA, LOW);
+      digitalWrite(LedR, HIGH);
+
+    }
+    else if (letter == 'E')
+    {
+      digitalWrite(LedR, LOW);
+      randNumber = random(1, 16);
+      digitalWrite(CABD, LOW);
+      digitalWrite(CABA, HIGH);
+      myDFPlayer.play(randNumber);
+      Serial.println(randNumber);
+
+      Serial.println(F(&quot;Cab Izq&quot;));
+      digitalWrite(LedA, HIGH);
+      delay(10000);
+      digitalWrite(LedA, LOW);
+      digitalWrite(LedR, HIGH);
+      digitalWrite(CABD, LOW);
+      digitalWrite(CABA, LOW);
+
+
+    }
+    else if (letter == 'F')
+    {
+      digitalWrite(LedR, LOW);
+      randNumber = random(1, 16);
+      digitalWrite(CABD, HIGH);
+      digitalWrite(CABA, LOW);
+      myDFPlayer.play(randNumber);
+      Serial.println(randNumber);
+      Serial.println(F(&quot; Cab Der&quot;));
+      digitalWrite(LedA, HIGH);
+      delay(10000);
+      digitalWrite(LedA, LOW);
+      digitalWrite(LedR, HIGH);
+      digitalWrite(CABD, LOW);
+      digitalWrite(CABA, LOW);
+    }
+    if (letter == 'G')
+    {
+      randNumber = random(1, 16);
+      digitalWrite(LedA, LOW);
+      digitalWrite(APieCD, HIGH);
+      digitalWrite(APieCA, LOW);
+      digitalWrite(BPieCD, HIGH);
+      digitalWrite(BPieCA, LOW);
+      myDFPlayer.play(randNumber);
+      Serial.println(randNumber);
+      Serial.println(F(&quot;Pie Central Arriba&quot;));
+      digitalWrite(LedA, HIGH);
+      delay(1500);
+      digitalWrite(LedA, LOW);
+      digitalWrite(LedR, HIGH);
+      digitalWrite(APieCD, LOW);
+      digitalWrite(APieCA, LOW);
+      digitalWrite(BPieCD, LOW);
+      digitalWrite(BPieCA, LOW);
+
+    }
+    else if (letter == 'H')
+    {
+      digitalWrite(LedR, LOW);
+      randNumber = random(1, 16);
+      digitalWrite(APieCD, LOW);
+      digitalWrite(APieCA, HIGH);
+      digitalWrite(BPieCD, LOW);
+      digitalWrite(BPieCA, HIGH);
+      myDFPlayer.play(randNumber);
+      Serial.println(randNumber);
+      Serial.println(F(&quot;Pie Central Abajo&quot;));
+      digitalWrite(LedA, HIGH);
+      delay(300);
+      digitalWrite(LedA, LOW);
+      digitalWrite(LedR, HIGH);
+      digitalWrite(APieCD, LOW);
+      digitalWrite(APieCA, LOW);
+      digitalWrite(BPieCD, LOW);
+      digitalWrite(BPieCA, LOW);
+    }
+    else if (letter == 'I')
+    {
+      digitalWrite(LedR, LOW);
+      randNumber = random(1, 16);
+     digitalWrite(IZQD, LOW);
+      digitalWrite(IZQA, LOW);
+      digitalWrite(DERD, LOW);
+      digitalWrite(DERA, LOW);
+      myDFPlayer.play(randNumber);
+      Serial.println(randNumber);
+      Serial.println(F(&quot;Stop&quot;));
+    }
+  }
+
+
+  static unsigned long timer = millis();
+
+  if (millis() - timer &gt; 3000) {
+    timer = millis();
+  }
+}
+</code></pre></div></div><div class=pagination><div class=pagination__title><span class=pagination__title-h>Read other posts</span><hr></div><div class=pagination__buttons><span class="button previous"><a href=https://st3p.github.io/post/newtatoos/><span class=button__icon>←</span>
+<span class=button__text>The new era of wearable technology</span></a></span>
+<span class="button next"><a href=https://st3p.github.io/post/simulation-dragon/><span class=button__text>Recreation of the movement of a creature</span>
+<span class=button__icon>→</span></a></span></div></div></div></div><footer class=footer><div class=footer__inner><div class=copyright><span>© 2020 Powered by <a href=http://gohugo.io>Hugo</a></span>
+<span>:: Theme made by <a href=https://twitter.com/panr>panr</a></span></div></div></footer><script src=https://st3p.github.io/assets/main.js></script><script src=https://st3p.github.io/assets/prism.js></script></div></body></html>
