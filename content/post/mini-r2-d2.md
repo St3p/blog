@@ -219,6 +219,10 @@ else if (letter == 'A')
 
 {{< image src="/img/r2d2100.png" alt="Circuit" position="center" style="border-radius: 8px;" >}}
 
+- Circuits
+
+{{< image src="/img/R2D2CIR.png" alt="Circuit" position="center" style="border-radius: 8px;" >}}
+
 - Arduino Code Complete
  ```
  #include "Arduino.h"
