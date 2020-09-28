@@ -69,4 +69,4 @@ theme = ["terminal"]
       [[languages.en.menu.main]]
         identifier = "Project"
         name = "proyects"
-        url = "project/project"
+        url = "projects/_index"
