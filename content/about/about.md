@@ -1,7 +1,8 @@
 ---
 title: "About me"
 date: "2018-07-18"
-author: "Stephanie Z"
+author: "Stephanie Zepeda Sanchez"
+description: "A list of the most advanced and intelligent industrial robots."
 ---
 
 ## Header 2

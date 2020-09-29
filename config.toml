@@ -12,7 +12,7 @@ theme = ["terminal"]
   themeColor = "green"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 3
 
   # show selector to switch language
   showLanguageSelector = false
@@ -65,8 +65,12 @@ theme = ["terminal"]
       [[languages.en.menu.main]]
         identifier = "About me"
         name = "About me"
-        url = "about/about"
+        url = "/about"
       [[languages.en.menu.main]]
         identifier = "Project"
-        name = "proyects"
-        url = "projects/_index"
+        name = "Proyects"
+        url = "/projects"
+      [[languages.en.menu.main]]
+        identifier = "Articles"
+        name = "Articles"
+        url = "/articles"
