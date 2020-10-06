@@ -65,7 +65,7 @@ theme = ["terminal"]
       [[languages.en.menu.main]]
         identifier = "About me"
         name = "About me"
-        url = "/about"
+        url = "/about/about"
       [[languages.en.menu.main]]
         identifier = "Project"
         name = "Proyects"
