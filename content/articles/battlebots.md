@@ -2,8 +2,8 @@
 title: "battlebots"
 date: "2020-10-13"
 author: "Stephanie Zepeda"
-cover: "img/robotina.jpg"
-description: "what does a ."
+cover: "img/BOTS.jpg"
+description: " "
 ---
 # how does it work?
 
