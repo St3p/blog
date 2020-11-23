@@ -38,7 +38,6 @@ Although the applications of smart materials (both current and futuristic) are f
 - Costs
 - Future applications of smart materials
 
-Concepts surrounding the futuristic application of smart materials include:
 
 # Aerial industry
 
