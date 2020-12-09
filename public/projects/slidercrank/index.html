@@ -1,0 +1,48 @@
+<!doctype html><html lang=en><head><title>Slider Crank :: Stephanie Z</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Simulation of a slide crank in ADAMS and MATLAB. Slider-cranks are a commonly used type of mechanism translating a rotary movement into a linear one, or the other way around. In this lab session, three slider-crank variations were modelled using ADAMS software. Their movements were simulated and analyzed to find the velocities and position for certain input angles. The obtained results were compared to manual computations using the vector loop equations."><meta name=keywords content><meta name=robots content="noodp"><link rel=canonical href=https://st3p.github.io/projects/slidercrank/><link rel=stylesheet href=https://st3p.github.io/assets/style.css><link rel=stylesheet href=https://st3p.github.io/assets/green.css><link rel=apple-touch-icon-precomposed sizes=144x144 href=https://st3p.github.io/img/apple-touch-icon-144-precomposed.png><link rel="shortcut icon" href=https://st3p.github.io/img/favicon/green.png><meta name=twitter:card content="summary"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="og:title" content="Slider Crank :: Stephanie Z"><meta property="og:description" content="This Mechanism is one of the most used systems in the mathematical field, it is an arrangement of parts designed to make a rotary straight motion movement as the type of movement that makes a piston engine, so me can define it as one type of four bar linkages which has three revolute joints and one sliding joint"><meta property="og:url" content="https://st3p.github.io/projects/slidercrank/"><meta property="og:site_name" content="Slider Crank"><meta property="og:image" content="https://st3p.github.io/img/slider.png"><meta property="og:image:width" content="2048"><meta property="og:image:height" content="1024"><meta property="article:published_time" content="2019-04-12 00:00:00 +0000 UTC"></head><body class=green><div class="container center headings--one-size"><header class=header><div class=header__inner><div class=header__logo><a href=/><div class=logo>My Blog</div></a></div><div class=menu-trigger>menu</div></div><nav class=menu><ul class="menu__inner menu__inner--desktop"><li><a href=/about/about>About me</a></li><li><a href=/articles>Articles</a></li><li><a href=/projects>Proyects</a></li><li><a href=/r2d2>R2D2</a></li></ul><ul class="menu__inner menu__inner--mobile"><li><a href=/about/about>About me</a></li><li><a href=/articles>Articles</a></li><li><a href=/projects>Proyects</a></li><li><a href=/r2d2>R2D2</a></li></ul></nav></header><div class=content><div class=post><h1 class=post-title><a href=https://st3p.github.io/projects/slidercrank/>Slider Crank</a></h1><div class=post-meta><span class=post-date>2019-04-12</span>
+<span class=post-author>:: Stephanie Zepeda</span></div><img src=https://st3p.github.io/img/slider.png class=post-cover alt="Slider Crank"><div class=post-content><div><h2 id=simulation-of-a-slide-crank-in-adams-and-matlab>Simulation of a slide crank in ADAMS and MATLAB.<a href=#simulation-of-a-slide-crank-in-adams-and-matlab class=hanchor arialabel=Anchor>&#8983;</a></h2><p>Slider-cranks are a commonly used type of mechanism translating a rotary movement
+into a linear one, or the other way around. In this lab session, three slider-crank variations were
+modelled using ADAMS software. Their movements were simulated and analyzed to find the
+velocities and position for certain input angles. The obtained results were compared to manual
+computations using the vector loop equations. With these two outcomes, it was attempted to
+estimate the accuracy of the ADAMS software.</p><p>The main applications of it can be found in the industry as in the engines powered by
+diesel or gasoline, also this type of mechanism has been used and analyzed over time for their
+advantages as: low cost, few parts, weight and others.
+The coordinate system to this type of mechanism should make the x-axis and the slider
+one coincide, so we can associate a vector with each link also we can say that the magnitude of
+this vector is the length of the link that is being analyzed, the direction of the vector is along the
+link, so we can conclude that the system made a loop</p><img src=/img/sliderADAMS.png class=left><h1 id=methodology>Methodology<a href=#methodology class=hanchor arialabel=Anchor>&#8983;</a></h1><p>The slider-crank mechanism element AB rotates at constant speed 0.26 rad/s (15°/s)
+anti-clockwise. Dimensions of elements AB and BC are 120 and 250 mm respectively. To be
+determined is the velocity of the slider when the angle between AB and the ground, ϕ, equals
+45°.</p><img src=/img/sliderFBD.png class=left><p>In order to find the velocity of the slider, the mechanism was modelled in ADAMS View.
+The two bars had a width and depth of 8 and 1 respectively, and lengths as indicated in the
+description. The material of the bars was left unspecified. Rotational joints were applied at
+points A, B and C and a translational one between C and the ground. A motion of 15°/s was
+applied at point A. The movement of the mechanism was simulated for 20 seconds with 5000
+steps. After that, the post processor function was used to analyse the movements. To find the
+exact velocity of point C at the desired input angle, first the x value for which ϕ equals 45° had
+to be determined by carefully moving over the graph using the arrow keys in the plot tracking
+function. Subsequently, this x value was checked in the velocity graph to obtain the velocity of
+point C at that moment.</p><img src=/img/sliderADAMS2.png class=left><h1 id=results>results<a href=#results class=hanchor arialabel=Anchor>&#8983;</a></h1><p>For the input angles of 45°, 27,62° and 90° x positions of respectively 1335,80, 1442,52
+and 935 were found.</p><p><img src=/img/sliderMatlabGraph.png class=left>
+<img src=/img/sliderMatlabAni.png class=left></p><div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden><iframe src="https://www.youtube.com/embed/u1Ij5A3P2Ss?autoplay=1" style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="YouTube Video"></iframe></div><pre><code>            45°         27,62°      90°
+ADAMS       1335.8      1442.52     953
+Matlab      1341.6812   1442.5087   953.9391
+Percentage
+error       0.44027549  -0.0007834  0.0985414
+</code></pre><blockquote><p>Table 1: different values for the x-position of the slider as obtained through ADAMS compared
+to values computed using Matlab</p></blockquote><p>To verify the results, the computations were repeated using Matlab. Subsequently, the
+percentage error was determined. Two conclusions can be drawn from this comparison: firstly, it
+is evident that the percentage error is rather large, hence the ADAMS software is likely to be
+inaccurate. Secondly however, the differences between the percentage errors are remarkably
+large as well, which is a strong indicator that human mistakes were made: software might make
+mistakes, but will be more or less consistent all the time. Both of these reflections are reasons
+not to attach too much value to the results of this project. More research would be needed to
+figure out where exactly the errors lie, and how the correct results can be found.</p><p>trinityscsp,(2013),Crank-Piston Mechanism, Grabcad, Retracted from:
+<a href=https://grabcad.com/library/crank-piston-mechanism-1>https://grabcad.com/library/crank-piston-mechanism-1</a>
+Britanica, (n,d),Slider-crank mechanism, Encyclopaedia Britannica, Retracted from:
+<a href=https://www.britannica.com/technology/slider-crank-mechanism>https://www.britannica.com/technology/slider-crank-mechanism</a>
+Bhupesh Chandrakan, Man Mohan Soni, (June 2015 ),Design and Optimization of Slider and
+Crank Mechanism with Multibody Systems, International Journal of Science and Research (IJSR) ,
+Retracted from:
+<a href=https://pdfs.semanticscholar.org/a998/e2efb7a894d100caf7668056fc3ba3db7447.pdf>https://pdfs.semanticscholar.org/a998/e2efb7a894d100caf7668056fc3ba3db7447.pdf</a></p></div></div></div></div><footer class=footer><div class=footer__inner><div class=copyright><span>© 2020 Powered by <a href=http://gohugo.io>Hugo</a></span>
+<span>:: Theme made by <a href=https://twitter.com/panr>panr</a></span></div></div></footer><script src=https://st3p.github.io/assets/main.js></script><script src=https://st3p.github.io/assets/prism.js></script></div></body></html>

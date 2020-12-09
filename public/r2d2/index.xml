@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>R2D2s on Stephanie Z</title><link>https://st3p.github.io/r2d2/</link><description>Recent content in R2D2s on Stephanie Z</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 02 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://st3p.github.io/r2d2/index.xml" rel="self" type="application/rss+xml"/><item><title>R2-D2 Arduino Code</title><link>https://st3p.github.io/r2d2/arduino/</link><pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate><guid>https://st3p.github.io/r2d2/arduino/</guid><description>#include &amp;lt;SoftwareSerial.h&amp;gt; SoftwareSerial R2D2(10, 11); char DATA = '0'; //Variable for the option choosen by the user is going to save int IZQD = 22; //left foot first motor A
+int IZQA = 24; //left foot first motor B
+int BIZQD = 26; //left foot second motor A
+int BIZQA = 28; //left foot second motor B
+int DERD = 30; //right foot first motor A
+int DERA = 32; //right foot first motor B
+int BDERD = 34; //right foot second motor A
+int BDERA = 36; //right foot second motor B
+int CABD = 42; //head motor A
+int CABA = 44; //head motor B
+int CP = 38; //shoulder motor A
+int CPA = 40; //shoulder motor B
+int LedR = 14; //Red led pin
+int LedA = 15; //Blue led pin
+int APieCD = 46; //central feet first motor A
+int APieCA = 48; //central feet first motor B
+int BPieCD = 50; //central feet second motor A
+int BPieCA = 52; //central feet second motor B
+void setup(){
+R2D2.</description></item><item><title>R2-D2 Assemble</title><link>https://st3p.github.io/r2d2/assemble/</link><pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate><guid>https://st3p.github.io/r2d2/assemble/</guid><description>Head mechanism Center leg Shoulder Foot</description></item><item><title>R2-D2 Circuit</title><link>https://st3p.github.io/r2d2/circuits/</link><pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate><guid>https://st3p.github.io/r2d2/circuits/</guid><description/></item><item><title>R2-D2 Final touches</title><link>https://st3p.github.io/r2d2/final/</link><pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate><guid>https://st3p.github.io/r2d2/final/</guid><description/></item><item><title>R2-D2 Hardware</title><link>https://st3p.github.io/r2d2/hardware/</link><pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate><guid>https://st3p.github.io/r2d2/hardware/</guid><description>Arduino Mega Bluetooth DC Motors x 8 4 Feet two for each foot. 2 Center foot sistem. 1 Shoulder. 1 Head. H-Bridge x 4 2 Foot Motors. 1 Center foot. 1 Head and shoulder. Led´s X 36 24 Small front panel (green, blue and white) 8 Large front panel (green, blue and white) 2 red display 2 blue display 9v Baterries x 2 Switch</description></item><item><title>R2-D2 Solidworks Design</title><link>https://st3p.github.io/r2d2/solidworks/</link><pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate><guid>https://st3p.github.io/r2d2/solidworks/</guid><description>Frame The design was made taking into account the multiple vents and panels of the robot seen on the films, so in a future it could have space to accommodate little systems for their movement. The measurements took into account to make the frame where taken from the website wwww.astromech.com
+Head mechanism The operation of this mechanism is simple it consist on a motor in the center of the head which gives action to a axial gear that moves smoothly thanks to the help of a lazy Susan that is attached to the from and the base of the head.</description></item><item><title/><link>https://st3p.github.io/r2d2/r2d2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://st3p.github.io/r2d2/r2d2/</guid><description/></item></channel></rss>
