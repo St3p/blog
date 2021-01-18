@@ -2,7 +2,7 @@
 title: "Why learn python this 2021?"
 date: "2021-01-17"
 author: "Stephanie Zepeda"
-cover: "python.jpeg"
+cover: "img/python.jpeg"
 description: "Python has been a very popular and "universal" language, and with many new followers in professional fields such as data science and machine learning. 2020 was a great year for Python, and 2021 looks to be even better. For all this, here are 5 reasons why you are encouraged to learn to learn to program in Python."
 ---
 
