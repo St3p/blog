@@ -2,7 +2,7 @@
 title: "raspberry pi"
 date: "2021-01-11"
 author: "Stephanie Zepeda"
-cover: "img/robotina.jpg"
+cover: "img/RASP.jpg"
 description: "the uses of a rapsberry pi, an how it can be a good addition to your skills."
 ---
 
