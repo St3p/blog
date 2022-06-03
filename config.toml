@@ -1,4 +1,4 @@
-baseurl = "https://st3p.github.io"
+baseurl = "https://stepzep.com"
 languageCode = "en-us"
 paginate = 5
 theme = ["terminal"]
